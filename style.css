@@ -337,12 +337,13 @@ section {
 }
 
 .sources {
-  list-style-type: disc; /* Set bullet style to filled circle */
-  margin-left: 20px; /* Add some left margin to the list */
+  list-style-type: disc;
+  margin-left: 20px;
+  list-style-type: none;
 }
 
 .sources li {
-  margin-bottom: 5px; /* Add some bottom margin between list items */
+  margin-bottom: 8px;
 }
 
 
