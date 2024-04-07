@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKouka</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anisa Kouka</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#visualization">Visualization</a></li>
+          <li><a href="#animation">Animation</a></li>
+          <li><a href="#credits">Credits</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anisa Kouka</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#visualization" onclick="toggleMenu()">Visualization</a></li>
+          <li><a href="#credits" onclick="toggleMenu()">Credits</a></li>
+          <li><a href="#animation" onclick="toggleMenu()">Animation</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Anisa Kouka profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anisa Kouka</h1>
+        <p class="section__text__p2">Engineer</p>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/anisa-kouka'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/akouk'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>5+ years <br />Engineer in Photogrammetry & 3D Modelling</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Eng. Surveying & Geoinformatics<br />M.Sc. Information & Communication Technologies</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              </br>
+              </br>
+              I'm an experienced engineer passionate about the intersection of technology and innovation.
+              With a background in surveying and geoinformatics, I've honed my skills in fields like photogrammetry, computer vision, augmented and virtual reality.
+            </br>
+            </br>
+
+            I spent several years at up2metric P.C., where I delved into researching state-of-the-art algorithms and software libraries for 3D reconstruction technologies.
+            My work focused on developing workflows for creating photorealistic 3D reconstructions tailored for augmented and virtual reality environments.
+            </br>
+            </br>
+            My educational journey includes pursuing a Master's degree in Information and Communication Technologies from the National & Kapodistrian University of Athens 
+            and holding a Bachelor's degree in Surveying & Geoinformatics Engineering from the University of West Attica.
+            </br>
+            </br> 
+            </br>
+            </br>
+          </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#visualization'"
+      />
+    </section>
+
+    <section id="visualization">
+      <h1 class="title">Visualization</h1>
+      <div class="visualization-details-container">
+        <div class="about-containers">
+          <div class="visualization-container">
+            <div class="gif-container">
+              <h2 class="visualization-sub-title">Same Sex Marriage Laws in the USA | 1995-2015</h2>
+              </br>
+              </br>
+              <img src="./assets/ssm_violin_y_axis.gif" alt="Description GIF" class="gif">
+            </div>
+            <div class="description">
+              <p>This is an animated violin plot, tracking the evolution of same-sex marriage laws for two decades (1995-2015) providing valuable historical context.
+                It allows viewers to see the progression of LGBTQ+ rights in the United States, which is both informative and emotionally impactful.
+
+              </br>
+              </br>
+              The visualization caught my eye and held my attention, due to its colors, design, and animation style.
+              Moreover, the visualization presents the data in a clear and easy-to-understand manner, making it accessible to a wide audience.
+              </br>
+              </br>
+              </br>
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#credits'"
+      />
+    </section>
+
+    <section id="animation">
+      <h1 class="title">Animation</h1>
+      <div class="animation-info-upper-container">
+        <svg id="animated-svg" width="1400" height="600" viewBox="0 0 400 200">
+          <!-- Example: Circle animation -->
+          <circle id="circle" cx="50" cy="100" r="20" fill="#8b8b00">
+            <animate attributeName="cx" dur="8s" values="50; 350; 50" repeatCount="indefinite" />
+          </circle>
+        
+          <!-- Example: Rectangle animation -->
+          <rect id="rectangle" x="100" y="50" width="40" height="30" fill="#008b8b">
+            <animate attributeName="x" dur="6s" values="100; 300; 100" repeatCount="indefinite" />
+          </rect>
+        
+          <!-- Example: Polygon animation -->
+          <polygon id="polygon" points="200,150 220,100 240,150" fill="#8b008b">
+            <animateTransform attributeName="transform" type="translate" dur="10s" values="0 0; 200 0; 0 0" repeatCount="indefinite" />
+          </polygon>
+        </svg>
+        
+
+      </div>
+    </section>
+
+    <section id="credits">
+      <h1 class="title">Credits</h1>
+      <div class="credits-details-container">
+
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <p>  
+            </br>
+            </br>
+            </br>
+            Special thanks to all the contributors who generously shared their knowledge and resources, including documentation, tutorials, and videos. 
+            </br>
+            Your support has been invaluable in the creation of this site.
+            </br>
+            </br>
+            </br>
+  
+          </p>
+            <ul class="sources">
+              <li>Source 1</li>
+              <li>Source 2</li>
+              <li>Source 3</li>
+              <!-- Add more sources as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#animation'"
+      />
+    </section>
+
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#visualization">Visualization</a></li>
+            <li><a href="#animation">Animation</a></li>
+            <li><a href="#credits">Credits</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Anisa Kouka. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
