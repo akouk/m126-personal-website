@@ -18,6 +18,7 @@
           <li><a href="#visualization">Visualization</a></li>
           <li><a href="#animation">Animation</a></li>
           <li><a href="#credits">Credits</a></li>
+          <li><a href="#paper">Paper</a></li>
         </ul>
       </div>
     </nav>
@@ -34,6 +35,7 @@
           <li><a href="#visualization" onclick="toggleMenu()">Visualization</a></li>
           <li><a href="#credits" onclick="toggleMenu()">Credits</a></li>
           <li><a href="#animation" onclick="toggleMenu()">Animation</a></li>
+          <li><a href="#paper" onclick="toggleMenu()">Paper</a></li>
         </div>
       </div>
     </nav>
@@ -158,17 +160,14 @@
       <h1 class="title">Animation</h1>
       <div class="animation-info-upper-container">
         <svg id="animated-svg" width="1400" height="600" viewBox="0 0 400 200">
-          <!-- Example: Circle animation -->
           <circle id="circle" cx="50" cy="100" r="20" fill="#8b8b00">
             <animate attributeName="cx" dur="8s" values="50; 350; 50" repeatCount="indefinite" />
           </circle>
         
-          <!-- Example: Rectangle animation -->
           <rect id="rectangle" x="100" y="50" width="40" height="30" fill="#008b8b">
             <animate attributeName="x" dur="6s" values="100; 300; 100" repeatCount="indefinite" />
           </rect>
         
-          <!-- Example: Polygon animation -->
           <polygon id="polygon" points="200,150 220,100 240,150" fill="#8b008b">
             <animateTransform attributeName="transform" type="translate" dur="10s" values="0 0; 200 0; 0 0" repeatCount="indefinite" />
           </polygon>
@@ -223,6 +222,41 @@
       </div>
     </section>
 
+    <section id="paper">
+      <h1 class="title">Paper</h1>
+      <div class="visualization-details-container">
+        <div class="about-containers">
+          <div class="visualization-container">
+            <div class="paper">
+              <p>I found the paper titled "Superpowers as Inspiration for Visualization" to be quite interesting, and at the same time well written and accessible, making complex ideas understandable. 
+                The use of images throughout the paper enhanced my understanding by allowing me to visualize the concepts effectively.
+              </br>
+              </br>
+                What stood out to me the most was that the article encourages the visualization community to think outside the conventional boundaries. 
+                Through their emphasis on drawing inspiration from a wide range of media, including comics, manga, anime, and science fiction, the authors encourage visualization researchers to think about and consider unusual ideas.
+                I think that this approach can potentially lead to more creative, innovative, and impactful techniques in the field of visualization.
+
+              </br>
+              </br>
+              In the article, I also liked the fact that the authors stress the importance of considering ethical and social implications when designing new technologies.  
+              I think the discussion of potential negative consequences, such as the misuse of visualization tools for surveillance or control, adds depth to the article. 
+              It is important for the field to consider these aspects to ensure responsible development and use of new technologies.
+
+              </br>
+              </br>
+              </br>
+              </p>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#paper'"
+      />
+    </section>
+
+
+
 
     <footer>
       <nav>
@@ -232,6 +266,7 @@
             <li><a href="#visualization">Visualization</a></li>
             <li><a href="#animation">Animation</a></li>
             <li><a href="#credits">Credits</a></li>
+            <li><a href="#paper">Paper</a></li>
           </ul>
         </div>
       </nav>
